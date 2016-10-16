@@ -21,23 +21,34 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:text="Setup Bluetooth Connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toDeviceListButton"
+        android:onClick="toDeviceList"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Stop the alarm tone"
         android:id="@+id/stopRingtone"
         android:clickable="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/alarm_on"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp" />
 
     <Button
         android:text="Clear all existing alarms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cancelAlarms"
-        android:layout_marginBottom="22dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/toDeviceListButton"
         android:layout_alignLeft="@+id/stopRingtone"
-        android:layout_alignStart="@+id/stopRingtone" />
+        android:layout_alignStart="@+id/stopRingtone"
+        android:layout_marginBottom="99dp" />
 
 </RelativeLayout>
